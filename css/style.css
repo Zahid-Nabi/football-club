@@ -1,0 +1,26 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+}
+
+/* hero section style  */
+.hero {
+    display: flex;
+    
+}
