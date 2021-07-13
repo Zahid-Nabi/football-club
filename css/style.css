@@ -72,3 +72,40 @@ a {
 .hero:hover img {
     transform: rotateY(180deg) scale(1.2) skew(8deg);
 }
+
+/* player-board styles */
+
+#player-board {
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+.players {
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    
+}
+.player {
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-img img {
+    width: 300px;
+    height: 256px;
+}
+.player-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    margin: 10px 0px;
+}
+.player-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+    margin: 10px 0px;
+}
