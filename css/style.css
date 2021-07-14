@@ -245,6 +245,39 @@ footer .logo img {
     Media Query
  =========================== */
 
+ /* for tablet devices */
+
+ @media only screen and (max-width: 768px) and (min-width: 481px) {
+     .hero {
+        padding: 25px 0;
+     }
+     .hero .container {
+        grid-template-columns: 1fr;
+        grid-gap: 50px 0;
+    }
+    .hero-text h1 {
+        font-size: 48px;
+    }
+    .hero-img {
+        text-align: center;
+    }
+    .hero-img img {
+        width: 80%;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #membership .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+    #report .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 50px;
+    }
+ }
+
  /* for mobile devices */
 
  @media only screen and (max-width: 480px) {
