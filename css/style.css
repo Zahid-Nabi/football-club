@@ -122,6 +122,80 @@ a {
 }
 
 /*========================
+ membership area styles 
+ =============================*/
+#membership {
+    background: linear-gradient(to left, rgb(210, 215, 243), rgba(220, 223, 241, 0.8)), url("../images/stadium.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+#membership .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.membership-text h2 {
+    font-size: 40px;
+    color:#2D25A0;
+    
+}
+.membership-text p {
+    width: 80%;
+    margin: 30px 0;
+}
+.membership-text .btn {
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.membership-text .btn:hover {
+    background: #2D25A0;
+}
+
+.membership-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.membership-image img {
+    width: 100%;
+}
+/*========================
+ game report area styles 
+ =============================*/
+ #report {
+     padding: 75px 0;
+ }
+ #report .container {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-column-gap: 50px;
+     align-items: center;
+ }
+ #report .video-area iframe {
+     width: 100%;
+ }
+ .result-area h4 {
+     font-size: 16px;
+     color: #E02C6D;
+ }
+ .result-area h2 {
+    font-size: 30px;
+    color: #2D25A0;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.result {
+    border: 5px solid;
+    border-image: linear-gradient(rgba(224, 44, 110, 0.643), rgba(45, 37, 160, 0.657));
+    border-image-slice: 1;
+    background-color:rgba(224, 44, 110, 0.219);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/*========================
  footer area styles 
  =============================*/
 footer {
@@ -180,7 +254,6 @@ footer .logo img {
          grid-template-columns: 1fr;
          grid-gap: 50px 0;
      }
-     
      .hero-text h1 {
          font-size: 36px;
      }
@@ -198,7 +271,21 @@ footer .logo img {
         grid-column-gap: 0;
         grid-row-gap: 27px;
     }
-
+    #membership .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+    .membership-image {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #report .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 50px;
+    }
+    .result-area h2 {
+        font-size: 25px;
+    }
     footer .logo img {
         width: 50%;
     }
