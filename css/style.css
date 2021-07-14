@@ -79,7 +79,7 @@ a {
     
     display: flex;
     justify-content: center;
-    padding-top: 70px;
+    padding: 70px 0;
 }
 .players {
     max-width: 1050px;
@@ -108,4 +108,44 @@ a {
     font-weight: 400;
     color: #6C6C6C;
     margin: 10px 0px;
+}
+
+/* footer area styles */
+footer {
+    padding: 63px 0;
+    text-align: center;
+}
+footer .logo img {
+    width: 485px;
+}
+.social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    margin: 0 7px;
+    font-size: 17px;
+    color: #969BAB;
+    background: #DDDDDD;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.social-icons a i {
+    transition: all 0.7s ease-in-out;
+}
+.social-icons a:hover {
+    background: #2D25A0;
+    color: #FFFFFF;
+}
+.social-icons a:hover > i {
+    transform: rotate(360deg);
+}
+.copyright {
+    font-size: 18px;
 }
